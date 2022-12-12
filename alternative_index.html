@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /* .navbar{
+      background-color: rgb(197, 197, 197);
+    } */
+    nav{
+      background-color: rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      padding: 1em;
+      display: flex;
+      align-items: center;
+    }
+    section{
+      width: 100%;
+      height: 100vh;
+    }
+    .color{
+      background-color: red;
+    }
+    p{
+      color: rgb(46, 46, 46);
+    }
+    span{
+      color: red;
+    }
+    .left{
+      margin-left: 2em;
+      width: 100%;
+    }
+    .right{
+      margin-right: 2em;
+      width: 100%;
+    }
+    ul{
+      color: rgb(46, 46, 46);
+      justify-content: end;
+      gap: 1.5em;
+      list-style: none;
+      display: flex;
+    }
+    li{
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: color 0.15s;
+    }
+    li:hover{
+      color: red;
+    }
+    img{
+      width: 100%;
+      height: 100vh;
+    }
+    nav{
+      position: fixed;
+      width: 100%;
+    }
+    .active a:hover{
+      color: white;
+    }
+
+    .active:hover{
+      color: white;
+    }
+
+    .active{
+      border-style: solid;
+      border-color: red;
+      border-width: thin;
+      color: white;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <nav>
+      <div class="left">
+        <p>LOR<span>ENZO</span></p>
+      </div>
+      <div class="right">
+        <ul>
+          <li class="home active"><a href="#home">HOME</a></li>
+          <li class="services"><a href="#services">SERVICES</a></li>
+          <li class="contact"><a href="#contact">CONTACT US</a></li>
+          <li class="about"><a href="#about">ABOUT US</a></li>
+          <li class="info"><a href="#info">INFO</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home">
+      <img src="img/ram.jpg">
+    </section>
+    <section id="services">
+      <h1>SERVICES</h1>
+    </section>
+    <section class="color" id="contact">
+      <h1>CONTACT</h1>
+    </section>
+    <section id="about">
+      <h1>ABOUT US</h1>
+    </section>
+    <section class="color" id="info">
+      <h1>INFO</h1>
+    </section>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+      const navLi = document.querySelectorAll("nav ul li");
+      window.onscroll = () => {
+      var current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop ) {
+          current = section.getAttribute("id"); }
+      });
+
+      navLi.forEach((li) => {
+        li.classList.remove("active");
+        if (li.classList.contains(current)) {
+          li.classList.add("active");
+        }
+      });
+    };
+  </script>
+</body>
+</html>
