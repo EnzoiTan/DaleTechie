@@ -1,0 +1,80 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(27, 27, 27);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 5em;
+
+  svg {
+    float: left;
+    position: absolute;
+    margin: 1.5em;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    fill: red;
+
+    &:hover {
+      fill: white;
+    }
+  }
+
+  .title {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .table {
+    margin: 0 auto;
+
+    .thead-primary {
+      background-color: red;
+      color: white;
+      overflow-x: visible;
+    }
+
+    .first {
+      width: 10%;
+      background-color: rgb(255, 0, 0);
+    }
+
+    .second {
+      width: 20%;
+      background-color: rgb(255, 0, 0);
+    }
+
+    .third {
+      width: 13%;
+      background-color: rgb(255, 0, 0);
+    }
+
+    .fourth {
+      width: 13%;
+      background-color: rgb(255, 0, 0);
+    }
+
+    .fifth {
+      width: 20%;
+      background-color: rgb(255, 0, 0);
+    }
+
+    .sixth {
+      width: 13%;
+      background-color: rgb(255, 0, 0);
+    }
+
+    .seventh {
+      width: 30%;
+      background-color: rgb(255, 0, 0);
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    td {
+      background-color: rgb(54, 54, 54);
+      font-size: 1em;
+    }
+  }
+}

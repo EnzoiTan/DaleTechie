@@ -1,0 +1,39 @@
+footer{
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(41, 41, 41);
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  div{
+    text-align: left;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .footer_header{
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  p{
+    font-size: 0.9em;
+    color: white;
+  }
+
+  a{
+    color: rgb(255, 255, 255);
+  }
+
+  .copyright{
+    display: grid;
+    width: 97.6vw;
+    flex: 1;
+    background-color: rgb(54, 54, 54);
+    padding: 0.5em;
+    place-items: center;
+  }
+}

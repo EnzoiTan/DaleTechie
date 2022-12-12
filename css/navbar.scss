@@ -1,0 +1,120 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  background-color: #232323;
+  display: flex;
+  z-index: 1000;
+
+  .left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    img {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 25px;
+      margin-right: 0.8em;
+    }
+
+    p {
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .schedule {
+      background-color: red;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      transition: color, background-color 0.15s;
+
+      &:hover {
+        color: white;
+        background-color: rgb(224, 17, 17);
+      }
+    }
+
+    svg {
+      background-color: white;
+      border-radius: 25px;
+      padding: 3px;
+      width: 28px;
+      margin-top: 3px;
+      stroke-width: 10px;
+      cursor: pointer;
+      fill: red;
+      transition: 0.15s;
+
+      &:hover {
+        background-color: rgb(255, 0, 0);
+        fill: white;
+      }
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 1.5em;
+    }
+
+    li {
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    li:hover {
+      color: red;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    .active a:hover {
+      color: white;
+    }
+
+    .active:hover {
+      color: white;
+    }
+
+    .active {
+      border-style: solid;
+      border-color: red;
+      border-width: thin;
+      color: white;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}

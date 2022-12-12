@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #232323;
+}
+
+svg {
+  position: absolute;
+  margin-top: -1.3em;
+  margin-left: 1.5em;
+  width: 40px;
+  height: 40px;
+  fill: red;
+  transition: 0.15s;
+}
+svg:hover {
+  fill: white;
+}
+
+nav {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  background-color: #363636;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+nav .back {
+  border-style: none;
+  background-color: transparent;
+  width: 12%;
+  display: flex;
+  margin-left: 1em;
+}
+nav a {
+  color: rgb(255, 173, 173);
+  text-decoration: none;
+}
+nav .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+nav .left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 0.8em;
+}
+nav .left p {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  width: 50%;
+}
+.first span {
+  letter-spacing: 4px;
+  margin-bottom: -1.1em;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 1em;
+}
+.first h3 {
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  color: rgb(255, 0, 0);
+  padding-bottom: 1.5rem;
+}
+.first label {
+  color: white;
+  line-height: 0;
+}
+.first input {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  caret-color: red;
+}
+.first button {
+  font-size: 1em;
+  width: 50%;
+  margin-top: 1.2em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: white;
+  border: none;
+  border-style: solid;
+  border-width: thin;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.first button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.second {
+  display: flex;
+  background-color: rgb(255, 21, 21);
+  background-blend-mode: multiply;
+  background-image: url("/img/blaz-erzetic-g5f0BJq-FRs-unsplash.jpg");
+  background-size: cover;
+  margin-left: -3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,142 @@
+* {
+  text-shadow: 1px 1px 1px black;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(22, 22, 22);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#schedule {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin-bottom: 3em;
+}
+
+.info {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1.6em;
+  margin-bottom: 15px;
+  margin-left: -1.95em;
+  padding-right: 2.35em;
+
+  img {
+    width: 29px;
+    height: 25px;
+  }
+
+  .img2 {
+    width: 25px;
+    height: 25px;
+    margin-left: 4px;
+    margin-right: 5px;
+  }
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 5px;
+    min-width: 50%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+svg {
+  position: absolute;
+  margin: 1.5em;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  fill: red;
+
+  &:hover {
+    fill: white;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  padding-top: 0.5em;
+}
+
+.set_sched {
+  border-color: rgb(41, 41, 41);
+  background-color: rgb(68, 68, 68);
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  width: 40%;
+}
+
+.schedule_section section .set_sched label {
+  margin-bottom: 0.6em;
+}
+.schedule_section section .set_sched input {
+  margin-bottom: 1em;
+  border-color: rgb(255, 255, 255);
+  background-color: transparent;
+  color: white;
+  border-style: solid;
+  border-width: thin;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.schedule_section section .set_sched select {
+  margin-bottom: 1em;
+  border-color: rgb(255, 255, 255);
+  background-color: transparent;
+  color: white;
+  border-style: solid;
+  border-width: thin;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.schedule_section section .set_sched option {
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.schedule_section section .set_sched button {
+  margin-top: 0.8em;
+  border-color: rgb(255, 255, 255);
+  background-color: transparent;
+  color: white;
+  border-style: solid;
+  border-width: thin;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.schedule_section section .set_sched button:hover {
+  background-color: rgba(255, 0, 0, 0.377);
+}
